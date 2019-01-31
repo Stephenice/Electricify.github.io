@@ -23,7 +23,10 @@ body{
 header,section,footer,nav {display: block;}
 
 /*------- reuseable code */
-h1,h2,h3,h4,h5,h6 { margin: 0;}
+h1,h2,h3,h4,h5,h6 { 
+    margin: 0;
+color: #487eb0;
+}
 
 
 section{
@@ -191,11 +194,11 @@ font-family: inherit;
     -o-border-radius: 3px;
     background-color: rgba(0, 0, 0, 0.0);
     cursor: pointer;
-    transition: background-color 2s ease;
-    -webkit-transition: background-color 2s ease;
-    -moz-transition: background-color 2s ease;
-    -ms-transition: background-color 2s ease;
-    -o-transition: background-color 2s ease;
+    transition: background-color 2s ease-out;
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -ms-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
     color: rgb(255, 255, 255);
 }
 
@@ -207,9 +210,79 @@ font-family: inherit;
     color: #fff5a1;
     background-color: rgba(0, 0, 0, 0.3);
     border: 2px solid #fff06e;
+    transform: scale(1);
 }
 
 /* -------about----------- */
-.about{
-    /* position: relative; */
+.about-header{
+    text-align: center;
 }
+
+.subtitle{
+    margin: 0 0 2em 0;
+    line-height: 0.5;
+    color: #636e72;
+    font-style: italic;
+    font-size: 14px;
+    word-spacing: 4px;
+}
+
+.cross span{
+    position: relative;
+    display: inline-block;
+}
+
+.cross span::before,
+.cross span::after{
+    content: " ";
+    position: absolute;
+    height: 5px;
+    border-bottom: 2px solid #636e72;
+    border-top: 1px solid #636e72;
+    top: 0;
+    width: 100px;
+    
+}
+
+.cross span::before{
+    right: 100%;
+    margin-right: 15px;
+}
+
+.cross span::after{
+    left: 100%;
+    margin-left: 15px;
+}
+
+.text, .about-list li a {
+    font-size: 80%;
+    line-height: 145%;
+    word-spacing: 5px;
+    margin-bottom: 1rem;
+    /* letter-spacing: 0.7px; */
+}
+
+.button .about-btn{
+    color: #487eb0;
+    border: 2px solid #487eb0;
+   
+}
+
+.about-list li{
+    list-style: none;
+    margin: 10px 0;
+    display: block;
+}
+
+.about-list li i{
+    margin-right: 10px;
+   color:#487eb0;
+}
+
+.about-list li a{
+  text-decoration: none;  
+  color: #000;
+}
+
+
+
