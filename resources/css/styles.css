@@ -56,15 +56,17 @@ header{
 
 /* --------nav---------- */
 .nav-banner{
-background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-
-
-  
-
-
-}
+background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+background-image: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100vw;
+ /* display: block; */
+ height: 80px;
+ z-index: 9999;
+  }
 
 .main-nav{
     list-style: none;
@@ -72,7 +74,6 @@ background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
     font-weight: 500;
     margin: 30px 0;
     text-align: center;
-    
 }
 
 .main-nav li{
@@ -130,6 +131,8 @@ font-family: inherit;
 /* ---------logo--------- */
 .logo{
     text-align: center;
+    top: 80px;
+    position: relative;
   
 }
 .logo span{
@@ -207,3 +210,6 @@ font-family: inherit;
 }
 
 /* -------about----------- */
+.about{
+    /* position: relative; */
+}
