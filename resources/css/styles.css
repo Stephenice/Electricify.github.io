@@ -17,23 +17,32 @@ body{
     text-rendering: optimizeLegibility;
     background-color: #ffffff;
     color: #000;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 header,section,footer,nav {display: block;}
 
-/* reuseable code */
+/*------- reuseable code */
 h1,h2,h3,h4,h5,h6 { margin: 0;}
 
 
-section{}
+section{
+    padding: 80px 0;
+}
 
 .row {
     width: 1140px;
     margin: 0 auto;
 }
 
-/* header */
+.clearfix{
+    display: table;
+    content: " ";
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+/*--------- header----------- */
 
 header{
     background: url(../image/b2.jpg) no-repeat center top;
@@ -50,7 +59,11 @@ header{
 background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
 background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
 background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-width: 100%;
+
+
+  
+
+
 }
 
 .main-nav{
@@ -59,22 +72,65 @@ width: 100%;
     font-weight: 500;
     margin: 30px 0;
     text-align: center;
+    
 }
 
 .main-nav li{
     display: inline-block;
     margin-left: 35px;
+    
 }
 
 .main-nav li a:link,
 .main-nav li a:visited{
     color: #fff;
     text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+   
 }
+
+.main-nav li.active a{
+    color: var(--yellow-color);
+}
+
+/* --------nav hover------------ */
+.link-effect a{
+position: relative;
+padding: 10px 0;
+/* color: #797878; */
+font-family: inherit;
+}
+
+.link-effect a::before{
+    position: absolute;
+    padding: 10px 0;
+    top: 0;
+    left: 0;
+    max-width: 0;
+    color: #fff06e;
+    content: attr(data-hover);
+    transition: max-width 0.5s;
+    -webkit-transition: max-width 0.5s;
+    -moz-transition: max-width 0.5s;
+    -ms-transition: max-width 0.5s;
+    -o-transition: max-width 0.5s;
+    overflow: hidden;
+   
+}
+
+.link-effect a:hover::before{
+    max-width: 100%;
+}
+
+
+
+
 
 /* ---------logo--------- */
 .logo{
     text-align: center;
+  
 }
 .logo span{
     display: block;
@@ -149,3 +205,5 @@ width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     border: 2px solid #fff06e;
 }
+
+/* -------about----------- */
