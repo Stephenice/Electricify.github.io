@@ -10,8 +10,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Electricify</title>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="resources/css/styles.css" />
+
     <link rel="stylesheet" type="text/css" media="screen" href="vendors/css/grid.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="resources/css/styles.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="vendors/css/normalize.css">
 
     <!-- mobile queries -->
@@ -28,10 +29,15 @@
     <header>
         <nav class="nav-banner">
             <div class="row">
+                <!-- logo -->
+                <div class="logo">
+                    <h1><span class="fas fa-traffic-light" aria-hidden="true"></span>Electrify</h1>
+                </div>
+                <!-- nav -->
                 <ul class="main-nav link-effect">
-                     <li class="active"><a href="#" data-hover="HOME">HOME</a></li>
+                    <li class="active"><a href="#" data-hover="HOME">HOME</a></li>
                     <li><a href="#About" data-hover="ABOUT">ABOUT</a></li>
-                    <li><a href="#" data-hover="SERVICE">SERVICE</a></li>
+                    <li><a href="#Service" data-hover="SERVICE">SERVICE</a></li>
                     <li><a href="#" data-hover="GALLERY">GALLERY</a></li>
                     <li><a href="#" data-hover="CLIENTS">CLIENTS</a></li>
                     <li><a href="#" data-hover="CONTACT">CONTACT</a></li>
@@ -39,64 +45,242 @@
             </div>
         </nav>
 
-        <div class="logo">
+        <!-- <div class="logo">
            <h1><span class="far fa-lightbulb" aria-hidden="true"></span>Electrify</h1>
-        </div>
+        </div> -->
 
         <!-- banner content -->
         <div class="banner-content">
             <h1>Power At Your Home</h1>
-            <p>Electricify proudly offer a wide range of electrical  <br>services globally.</p>
-            <div class="button"> 
-                <a class="btn" href="#">Book Now</a>
+            <p>Electricify proudly offer a wide range of electrical <br>services globally.</p>
+            <div class="button">
+                <a class="btn" href="#package">Book Now</a>
             </div>
-            
+
         </div>
 
     </header>
-<div class="clearfix"></div>
+    <div class="clearfix"></div>
 
-<!-- about page -->
+    <!-- about page -->
     <section class="about" id="About">
-       <div class="row about-header">
-          <h2>About us</h2>
-           <p class="subtitle cross"><span>Industrial Revolution Business</span></p>
-       </div>
+        <div class="row about-header">
+            <h2>About us</h2>
+            <p class="subtitle cross"><span>Industrial Revolution Business</span></p>
+        </div>
 
-       <div class="row">
-           <div class="col span-1-of-2">
-             <img src="resources/image/a1.jpg" alt="">
-           </div>
-
-           <div class="col span-1-of-2">
-                <p class="text">At AA All Services Electrical, our goal is simple – to provide quality residential electrical services. We specialize in complete residential home wiring, service upgrades, and electrical inspections for home and business owners. We also work on wiring of small and large remodeling jobs including kitchens, bedrooms and additions to homes. We employ technicians who care, and each one is background-checked and screened for your peace of mind. Our team provides fast response times, and your satisfaction is guaranteed in all that we do. Whether you’re dealing with a malfunctioning circuit breaker or you need home air conditioner repair, our licensed electricians are available 24 hours a day for emergencies.</p>
-<ul class="about-list">
-    <li><i class="far fa-arrow-alt-circle-right"></i><a href="">Home Safety Inspection</a></li>
-
-    <li><i class="far fa-arrow-alt-circle-right"></i><a href="">Surge Protection</a></li>
-
-    <li><i class="far fa-arrow-alt-circle-right"></i><a href="">Lighting Installation</a></li>
-
-    <li><i class="far fa-arrow-alt-circle-right"></i><a href="">Indoor Lighting</a></li>
-</ul>
-
-
-                <div class="button"> 
-                        <a class="btn about-btn" href="#">Book Now</a>
-                    </div>
+        <div class="row">
+            <div class="col span-1-of-2">
+                <img src="resources/image/a1.jpg" alt="">
             </div>
-       </div>
-    
-    </section>
 
+            <div class="col span-1-of-2">
+                <p class="text">At AA All Services Electrical, our goal is simple – to provide quality residential
+                    electrical services. We specialize in complete residential home wiring, service upgrades, and
+                    electrical inspections for home and business owners. We also work on wiring of small and large
+                    remodeling jobs including kitchens, bedrooms and additions to homes. We employ technicians who
+                    care, and each one is background-checked and screened for your peace of mind. Our team provides
+                    fast response times, and your satisfaction is guaranteed in all that we do. Whether you’re dealing
+                    with a malfunctioning circuit breaker or you need home air conditioner repair, our licensed
+                    electricians are available 24 hours a day for emergencies.</p>
+                <ul class="about-list">
+                    <li><i class="far fa-arrow-alt-circle-right"></i><a href="">Home Safety Inspection</a></li>
+
+                    <li><i class="far fa-arrow-alt-circle-right"></i><a href="">Surge Protection</a></li>
+
+                    <li><i class="far fa-arrow-alt-circle-right"></i><a href="">Lighting Installation</a></li>
+
+                    <li><i class="far fa-arrow-alt-circle-right"></i><a href="">Indoor Lighting</a></li>
+                </ul>
+
+
+                <div class="button">
+                    <a class="btn about-btn" href="#package">Book Now</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <div class="clearfix"></div>
     <!-- SERVICE  -->
 
-    <section class="service" >
-            <div class="row about-header">
-                    <h2>What We Do To You</h2>
-                     <p class="subtitle cross"><span>Industrial Revolution Business</span></p>
-                 </div>
+    <section class="service" id="Service">
+        <div class="row about-header">
+            <h2>What We Do To You</h2>
+            <p class="subtitle cross"><span>Industrial Revolution Business</span></p>
+        </div>
+
+        <div class="row">
+            <div class="service-part">
+                <div class="part-one no-border">
+                    <h4>Residential Services</h4>
+                    <ul class="about-list">
+                        <li><i class="far fa-arrow-alt-circle-right"></i>
+                            <a href="">Appliance Circuits & Installation</a></li>
+
+                        <li><i class="far fa-arrow-alt-circle-right"></i><a href="">Breakers and Fuses </a></li>
+
+                        <li><i class="far fa-arrow-alt-circle-right"></i><a href="">Christmas/Holiday Lighting
+                                Troubleshooting</a></li>
+
+                        <li><i class="far fa-arrow-alt-circle-right"></i><a href="">Code Corrections </a></li>
+
+                        <li><i class="far fa-arrow-alt-circle-right"></i><a href="">Data and Communication Lines </a></li>
+                    </ul>
+                </div>
+
+                <div class="part-one">
+                    <img src="resources/image/g1.jpg" alt="">
+                </div>
+
+                <div class="part-one no-border">
+                    <h4>Commercial Services</h4>
+                    <ul class="about-list">
+                        <li><i class="far fa-arrow-alt-circle-right"></i><a href="">1 phase / 3 Phase Circuits </a></li>
+
+                        <li><i class="far fa-arrow-alt-circle-right"></i><a href="">Appliance Circuits and Installation
+                            </a></li>
+                        <li><i class="far fa-arrow-alt-circle-right"></i><a href="">Ballast and Lamp Replacing </a></li>
+                        <li><i class="far fa-arrow-alt-circle-right"></i><a href="">Breakers and Fuses </a></li>
+                        <li><i class="far fa-arrow-alt-circle-right"></i><a href="">Category 5 Cabling</a></li>
+                    </ul>
+                </div>
+
+                <div class="part-one">
+                    <img src="resources/image/g1.jpg" alt=""></div>
+
+                <div class="part-one no-border">
+                    <p class="text">Our clients have depended on AA All Services for home electrical maintenance and
+                        repairs for over 25 years. We can provide services from installing new circuit breaker panels
+                        to inspecting existing wiring and even providing electrical remodeling, our team of expert
+                        electricians does it all.</p>
+                </div>
+                <div class="part-one">
+                    <img src="resources/image/g1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
     </section>
+    <div class="clearfix"></div>
+    <!-- SERVICE  -->
+
+    <section class="package" id="package">
+        <div class="row about-header">
+            <h2>Packages</h2>
+            <p class="subtitle cross"><span>Industrial Revolution Business</span></p>
+        </div>
+
+        <div class="row">
+            <div class="col span-1-of-3">
+                <div class="package-list">
+                    <div>
+                        <h4>PREMIUM</h4>
+                        <p class="price">$399 <span>/ month</span></p>
+                    </div>
+
+                    <div>
+                        <ul>
+                            <li><i class="fas fa-check"></i>Roof Solar Systems</li>
+                            <li><i class="fas fa-check"></i>Light Fixtures</li>
+                            <li><i class="fas fa-check"></i>LED Pot Lights</li>
+                            <li><i class="fas fa-check"></i>LED Pot Lights</li>
+                            <li><i class="fas fa-check"></i>Garage Circuits</li>
+                        </ul>
+
+                    </div>
+                    
+                    <div class="button">
+                        <a class="btn about-btn" href="#">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col span-1-of-3">
+                <div class="package-list">
+                        <div>
+                    <h4>PRO</h4>
+                    <p class="price">$399 <span>/ month</span></p>
+                </div>
+
+                <div>
+                        <ul>
+                            <li><i class="fas fa-check"></i>Roof Solar Systems</li>
+                            <li><i class="fas fa-check"></i>Light Fixtures</li>
+                            <li><i class="fas fa-check"></i>LED Pot Lights</li>
+                            <li><i class="fas fa-check"></i>LED Pot Lights</li>
+                            <li><i class="fas fa-check"></i>Garage Circuits</li>
+                        </ul>
+
+                    </div>
+                    <div class="button">
+                            <a class="btn about-btn" href="#">Book Now</a>
+                        </div>
+
+                </div>
+            </div>
+
+            <div class="col span-1-of-3">
+                <div class="package-list">
+                        <div>
+                    <h4>STARTER</h4>
+                    <p class="price">$399 <span>/ month</span></p>
+                </div>
+                <div>
+                        <ul>
+                            <li><i class="fas fa-check"></i>Roof Solar Systems</li>
+                            <li><i class="fas fa-check"></i>Light Fixtures</li>
+                            <li><i class="fas fa-check"></i>LED Pot Lights</li>
+                            <li><i class="fas fa-check"></i>LED Pot Lights</li>
+                            <li><i class="fas fa-times"></i></li>
+                        </ul>
+
+                    </div>
+                    <div class="button">
+                            <a class="btn about-btn" href="#">Book Now</a>
+                        </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <div class="clearfix"></div>
+
+
+    <!-- GALLERY   -->
+
+    <section class="gallery">
+        <div class="row about-header">
+            <h2>Gallery</h2>
+            <p class="subtitle cross"><span>Industrial Revolution Business</span></p>
+        </div>
+    </section>
+    <div class="clearfix"></div>
+
+    <!-- CLIENTS   -->
+
+    <section class="clients">
+            <div class="row about-header">
+                <h2>Clients</h2>
+                <p class="subtitle cross"><span>Industrial Revolution Business</span></p>
+            </div>
+        </section>
+        <div class="clearfix"></div>
+
+
+<!-- contact -->
+<section class="contact">
+        <div class="row about-header">
+            <h2>Contact</h2>
+            <p class="subtitle cross"><span>Industrial Revolution Business</span></p>
+        </div>
+    </section>
+    <div class="clearfix"></div>
+
+
+<footer>
+
+</footer>
 
     <!-- js -->
     <script src="main.js"></script>
