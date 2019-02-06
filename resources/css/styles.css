@@ -48,7 +48,10 @@ section{
 /*--------- header----------- */
 
 header{
-    background: url(../image/b1.jpg) no-repeat center top;
+    /* background: url(../image/b2.jpg) no-repeat center top; */
+
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../image/b2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../image/b2.jpg);
     background-attachment: fixed;
     background-size: cover;
     position: relative;
