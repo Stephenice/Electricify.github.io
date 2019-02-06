@@ -64,8 +64,9 @@
         }
 
         header{
-            
-            min-height: 480px;
+            /* width: 100%; */
+            background-size: 150% 100%;
+            /* min-height: 480px; */
         }
 
 }
