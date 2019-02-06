@@ -50,7 +50,13 @@
     body { font-size: 17px; }
     section { padding: 30px 0; }
 
-   
+    header{
+        background: url(../images/b2.jpg) no-repeat center top; 
+        
+         /* background-position: center;  */
+        min-height: 563px;
+        
+    }
 
     .col { 
         width: 100%;
