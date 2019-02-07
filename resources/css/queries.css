@@ -3,8 +3,7 @@
 
  /* 480 ,767, 1023, 1200 */
 
- @media only screen 
- and (min-width : 375px) 
+ @media (min-width : 375px) 
  and (max-width : 667px) { 
      /* STYLES GO HERE */
      section{
@@ -22,11 +21,7 @@
 
    header{
     background: url(../image/b2.jpg) no-repeat center top;
-   
-    position: relative;
-    overflow: hidden;
-    min-height: 100vh;
-    /* min-height:650px; */
+    min-height:650px;
 }
 
 
