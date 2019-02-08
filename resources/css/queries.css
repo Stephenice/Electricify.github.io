@@ -19,14 +19,23 @@
    }
 
    header{
-    /* min-height: 100vh; */
-    /* min-height:563px; */
+    width: 100vw;
+    min-height:563px;
 }
 
 .banner-content{
    
     width: 80%;
 }
+
+.nav-banner{
+  
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100vw;
+     
+      }
 
 
     }
