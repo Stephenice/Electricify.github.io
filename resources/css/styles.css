@@ -48,9 +48,19 @@ section{
 /*--------- header----------- */
 
 header{
-    /* background: url(../image/b2.jpg) no-repeat center top; */
+    background: url(../image/b2.jpg) no-repeat center top;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    min-height:650px;
+	position: relative;
 
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../image/b2.jpg);
+
+
+
+    /* background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../image/b2.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../image/b2.jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -62,8 +72,8 @@ header{
     position: relative;
     overflow: hidden;
     min-height: 100vh;
-    background-repeat: no-repeat;
-    /* min-height:650px; */
+    background-repeat: no-repeat; */
+    
 }
 
 
