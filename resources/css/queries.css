@@ -19,8 +19,9 @@
    }
 
    header{
-    width: 100%;
-    min-height:667px;
+    /* width: 100%; */
+    min-height:100vh;
+    background: url(../image/b22.jpg) no-repeat center top;
 }
 
 .banner-content{
