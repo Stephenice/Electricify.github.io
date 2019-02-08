@@ -19,8 +19,8 @@
    }
 
    header{
-    
-    min-height:650px;
+    min-height: 100vh;
+    /* min-height:650px; */
 }
 
 .banner-content{
