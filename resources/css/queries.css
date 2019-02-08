@@ -19,7 +19,7 @@
    }
 
    header{
-    width: 100vw;
+    width: 100%;
     min-height:667px;
 }
 
@@ -28,14 +28,7 @@
     width: 80%;
 }
 
-.nav-banner{
-  
-     position: fixed;
-     top: 0;
-     left: 0;
-     width: 100vw;
-     
-      }
+
 
 
     }
