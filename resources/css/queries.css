@@ -3,7 +3,7 @@
 
  /* 480 ,767, 1023, 1200 */
 
- @media (min-width : 375px) { 
+ @media (max-width : 780px) { 
      /* STYLES GO HERE */
      section{
         padding: 70px 0;
