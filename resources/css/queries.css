@@ -6,7 +6,7 @@
  @media (min-width : 375px) { 
      /* STYLES GO HERE */
      section{
-        padding: 30px 0;
+        padding: 70px 0;
     }
     
     .row {
@@ -20,7 +20,7 @@
 
    header{
     /* min-height: 100vh; */
-    min-height:563px;
+    /* min-height:563px; */
 }
 
 .banner-content{
