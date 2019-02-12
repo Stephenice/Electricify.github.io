@@ -691,6 +691,11 @@ footer p a{
         -ms-transform: none;
         -o-transform: none;
     }
+
+    .main-nav li{
+        display: none;
+    } 
+
     
 }
 
