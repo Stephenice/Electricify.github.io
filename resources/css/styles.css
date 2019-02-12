@@ -615,6 +615,7 @@ footer p a{
     header{
         background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../image/b22.jpg);
         background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../image/b22.jpg);
+        background: url(../image/b22.jpg);
         
     height: 80vh;
     }
