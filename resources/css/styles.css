@@ -57,8 +57,8 @@ header{
     min-height:650px;
 	position: relative; */
 
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../image/b2.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../image/b2.jpg);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../image/b1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../image/b1.jpg);
     background-attachment: fixed;
     background-size: cover;
     -webkit-background-size: cover;
@@ -115,11 +115,23 @@ background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    cursor: pointer;
-   
+    cursor: pointer;  
 }
 
 .main-nav li.active a{
+    color: var(--yellow-color);
+}
+
+
+.moblie-nav{
+    float: right;
+    margin-top: 15px;
+    cursor: pointer;
+    display: none;
+}
+
+.moblie-nav i{
+    font-size: 2rem;
     color: var(--yellow-color);
 }
 
@@ -160,7 +172,7 @@ font-family: inherit;
 .logo{
     top: 0;
     margin: 10px 0;
-    
+    /* border:2px solid #487eb0; */
     float: left;
  }
 
@@ -607,22 +619,22 @@ footer p a{
 
 }
 
+/* ----responives nav hidden */
+
 
 /* --------Responsive function------- */
 
 @media screen and (max-width: 580px){
 
     header{
-        background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../image/b22.jpg);
-        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../image/b22.jpg);
-        background: url(../image/b22.jpg) no-repeat center/cover;
+        background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../image/b1.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../image/b1.jpg);
+        background: url(../image/b1.jpg) no-repeat center/cover;
         
     height: 100vh;
     }
 
-    .main-nav{
-       display: none;
-    }
+   
     
     .row {
         width: 95%;
@@ -695,14 +707,165 @@ footer p a{
         -o-transform: none;
     }
 
-    .main-nav li{
-        display: none;
-    } 
+    /* main nav */
 
-    
+    .main-nav{
+        display: none;
+     }
+
+    .main-nav{
+        float: left;
+        margin: 4px 0;
+        width: 100%;
+        /* display: block; */
+
+        background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+background-image: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+     }
+
+     .main-nav li{
+        display: block;
+    text-align: center;
+     }
+
+     .link-effect a{
+        display: block;
+        }
+
+        .logo{
+            display: block;
+         }
+        
+
+    /* moblie nav */
+    .moblie-nav{
+        display: inline-block;    
+    }
+  
+
+    .main-nav li a:link,
+    .main-nav li a:visited{
+    display: block;
+      border: 0; 
+      padding: 5px 0; 
+}  
+
+.main-nav li:nth-child(1){
+    margin-left: 35px;    
+}
+.link-effect a:hover::before{
+    max-width: 0;
 }
 
+
+     
+}
+
+
+
 @media screen and (max-width: 780px){
+    header{
+       
+        
+    height: 100vh;
+    }
+
+    .row {
+        width: 95%;
+    }
+
+    /* .col {
+        width: 100%;
+    } */
+
+    .banner-content{
+        position: absolute;
+        display: block;
+        width: 90%;
+        top: 35%;
+        left: 5%;
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+    }
+
+    /* main nav */
+
+    .main-nav{
+        display: none;
+     }
+
+    .main-nav{
+        float: left;
+        margin: 4px 0;
+        width: 100%;
+        /* display: block; */
+
+        background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+background-image: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+     }
+
+     .main-nav li{
+        display: block;
+    text-align: center;
+     }
+
+     .link-effect a{
+        display: block;
+        }
+
+        .logo{
+            display: block;
+         }
+        
+
+    /* moblie nav */
+    .moblie-nav{
+        display: inline-block;    
+    }
+  
+
+    .main-nav li a:link,
+    .main-nav li a:visited{
+    display: block;
+      border: 0; 
+      padding: 5px 0; 
+}  
+
+.main-nav li:nth-child(1){
+    margin-left: 35px;    
+}
+.link-effect a:hover::before{
+    max-width: 0;
+}
+
+.span-1-of-2 img{
+    border-radius:200%;
+    width: 100%;
+    height: 100%;
+    /* shape-outside: circle();
+    float: left; */
+    -webkit-border-radius:200%;
+    -moz-border-radius:200%;
+    -ms-border-radius:200%;
+    -o-border-radius:200%;
+}
+
+.package-list{
+    width: 100%;
+    height: auto;  
+}
+
+footer p{
+    width: 100%;
+   margin: 8px;
+   font-size: 80%;
+}
+
 
 }
 
