@@ -159,7 +159,7 @@ font-family: inherit;
 /* ---------logo--------- */
 .logo{
     top: 0;
-    margin: -10px 0;
+    margin: 10px 0;
     
     float: left;
  }
